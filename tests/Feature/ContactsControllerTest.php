@@ -62,5 +62,5 @@ class ContactsControllerTest extends TestCase
         $response->assertStatus(200);
         $this->assertDatabaseMissing('contacts', $contact->toArray());
     }
-    
+
 }
